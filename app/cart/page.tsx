@@ -55,7 +55,14 @@ export default function CartPage() {
             {/* LEFT - PRODUCTS */}
             <div className="space-y-8">
 
-              {cart.map((item) => (
+              {cart.map((item: {
+                id: string | number;
+                image: string;
+                name: string;
+                category: string;
+                price: number;
+                quantity: number;
+              }) => (
                 <div
                   key={item.id}
                   className="flex gap-6 border-b border-gray-200 pb-8"
@@ -178,3 +185,5 @@ export default function CartPage() {
     </main>
   );
 }
+
+

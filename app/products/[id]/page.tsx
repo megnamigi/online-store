@@ -56,7 +56,7 @@ export default async function ProductDetail({
       <>
         <Navbar />
 
-        <div className="min-h-[500px] flex flex-col items-center justify-center">
+        <div className="min-h-125 flex flex-col items-center justify-center">
           <h1 className="text-3xl font-bold mb-5">
             Product not found
           </h1>
